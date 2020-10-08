@@ -9,6 +9,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.scroll-menu .list {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 10px 5px;
+}
+
 /* APP */
 .app {
   display: flex;
@@ -52,21 +59,73 @@ body {
 
 /* CONTENT */
 .main-content .content {
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
+  position: relative;
   flex-grow: 1;
 }
 
 .main-content .content .top-content {
-  background: rgba(189, 195, 199, 1 .5);
-  flex-basis: 50px;
+  background: rgba(189, 195, 199, .5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+.content .top-content .content-box {
+  background-color: rgba(255, 192, 203, .5);
+  width: 200px;
+  height: 40px;
 }
 
 .main-content .content .scrollable {
   background-color: black;
-  flex-grow: 1;
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .scrollable .menu {
+  margin: 20px 25px;
+}
+
+.content .scrollable .menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content .scrollable .menu ul li {
+  margin: 0 10px;
+}
+
+.content .scrollable .menu ul li a {
+  text-decoration: none;
+}
+
+.content .scroll-menu h2 {
+  margin: 10px 0;
+}
+
+.content .scroll-menu .list-scroll1,
+.content .scroll-menu .list-scroll2,
+.content .scroll-menu .list-scroll3 {
+  display: flex;
+}
+
+.content .scroll-menu .list-scroll1 {
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
