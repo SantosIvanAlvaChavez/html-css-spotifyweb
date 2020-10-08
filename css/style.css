@@ -1,0 +1,92 @@
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* APP */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* SIDEBAR */
+.main-content .sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+}
+
+.main-content .sidebar .sidebar-top {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-content .sidebar .sidebar-top .logo {
+  background-color: red;
+  flex-basis: 50px;
+}
+
+.main-content .sidebar .sidebar-top .navbar {
+  background-color: lightblue;
+  flex-grow: 1;
+}
+
+.main-content .sidebar .account {
+  background-color: orange;
+  flex-basis: 50px;
+}
+
+/* CONTENT */
+.main-content .content {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-content .content .top-content {
+  background: rgba(189, 195, 199, 1 .5);
+  flex-basis: 50px;
+}
+
+.main-content .content .scrollable {
+  background-color: black;
+  flex-grow: 1;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  flex-basis: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .singer {
+  background-color: green;
+  flex-basis: 200px;
+}
+
+footer .player {
+  background-color: violet;
+  flex-grow: 1;
+}
+
+footer .icons {
+  background-color: yellow;
+  flex-basis: 200px;
+}
